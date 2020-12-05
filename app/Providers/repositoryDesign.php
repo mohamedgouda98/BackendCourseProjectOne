@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class repositoryDesign.php extends ServiceProvider
+class repositoryDesign extends ServiceProvider
 {
     /**
      * Register services.
@@ -13,7 +13,10 @@ class repositoryDesign.php extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            'App\Http\Interfaces\SliderInterface',
+            'App\Http\Repositories\SliderRepository'
+        );
     }
 
     /**

@@ -117,11 +117,14 @@
                         <div class="row">
                             <div class="col-12">
 
+                            @include('status')
+
                                 <!-- Start Dashboard Main Content -->
                                 <div class="dash-main-content">
 
                                     <!-- Start Edit Website -->
                                     <div class="edit-website">
+
 
                                         <!-- Start Edit Slider Section
                                         ------------------------------>
@@ -134,14 +137,16 @@
                                                 <div class="card-body">
                                                     <!-- Start Form
                                                     ----------------->
-                                                    <form>
+
+                                                    <form method="POST" action="{{route('slider.add')}}" enctype="multipart/form-data">
+                                                        @csrf
                                                         <div class="row">
                                                             <div class="col-12 col-md-6">
                                                                 <div class="form-group">
                                                                     <label for="formGroupExampleInput">عنوان السلايدر</label>
                                                                     <!-- Slider Title Input
                                                                     -------------------------->
-                                                                    <input type="text" class="form-control" id="formGroupExampleInput">
+                                                                    <input type="text" name="title" class="form-control" id="formGroupExampleInput">
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6">
@@ -151,7 +156,7 @@
                                                                     <!-- Upload Slider Image Input
                                                                     -------------------------->
                                                                     <div class="custom-file">
-                                                                        <input type="file" class="custom-file-input" id="customFile">
+                                                                        <input type="file" name="image" class="custom-file-input" id="customFile">
                                                                         <label class="custom-file-label" for="customFile">تحميل صورة</label>
                                                                     </div>
                                                                 </div>
@@ -162,7 +167,7 @@
 
                                                             <!-- Slider Subtitle
                                                             -------------------------->
-                                                            <textarea class="form-control" id="formGroupExampleInput2" cols="10" rows="5"></textarea>
+                                                            <textarea class="form-control" name="body" id="formGroupExampleInput2" cols="10" rows="5"></textarea>
                                                         </div>
 
                                                         <!-- button Submit Form

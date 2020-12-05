@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,10 @@ Route::get('/', function () {
 
 Route::get('/admin', function () {
     return view('dashboard.index');
+})->name('admin');
+
+Route::group(['prefix' => 'admin'], function(){
+
+    Route::post('/admin/slider/add', [SliderController::class, 'addSlider'])->name('slider.add');
+
 });
