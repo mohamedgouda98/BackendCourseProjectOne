@@ -24,12 +24,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d5f2c4f-5f3c-412d-96f8-c5c1e0675b01" name="Default Changelist" comment="">
+    <list default="true" id="1d5f2c4f-5f3c-412d-96f8-c5c1e0675b01" name="Default Changelist" comment="Slider Controller">
       <change beforePath="$PROJECT_DIR$/../../Eljazera_Shining-V2.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MentorReg.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../albakhurj/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../albakhurj/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../albakhurj/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../albakhurj/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../albakhurj/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../albakhurj/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bakhargy/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bakhargy/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bakhargy/.gitattributes" beforeDir="false" />
@@ -126,6 +123,13 @@
       <change beforePath="$PROJECT_DIR$/../../ieee-sha-project/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../ieee-sha-project/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ieee-sha-project/resources/views/welcome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ieee-sha-project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ieee-sha-project/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/firstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/firstProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../panda" beforeDir="false" afterPath="$PROJECT_DIR$/../../panda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../panda.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../qr.zip" beforeDir="false" />
@@ -138,12 +142,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -281,8 +286,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606670801341</updated>
-      <workItem from="1606670802580" duration="4882000" />
+      <workItem from="1606670802580" duration="5538000" />
+      <workItem from="1606929418486" duration="655000" />
+      <workItem from="1607177734105" duration="8391000" />
+      <workItem from="1607190861102" duration="9000" />
+      <workItem from="1607190987818" duration="284000" />
     </task>
+    <task id="LOCAL-00001" summary="Slider Controller">
+      <created>1607184326601</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607184326691</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,5 +315,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Slider Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slider Controller" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607184341240">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607184341240" />
+    <state x="367" y="141" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1607190816238">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="367" y="141" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1280.800@0.0.1280.800" timestamp="1607190816238" />
   </component>
 </project>
