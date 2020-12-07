@@ -19,7 +19,7 @@ class Slider extends Component
     protected $rules=[
         'title' => 'required|min:3',
         'body' => 'required|min:5',
-        'image' => 'required|file|mimes:png,jpg,pdf',
+        'image' => 'required|file|mimes:png,jpg',
     ];
 
     protected $messages=[
@@ -27,8 +27,7 @@ class Slider extends Component
         'required' => 'هذا الحقل مطلوب',
         'body.min' => 'يجب ادخال اكثر من ٥ حروف',
         'image.file' => 'يجب أن يكون ملف',
-        'image.mimes' => 'يجب أن بصيغة pdf او png او jpg',
-
+        'image.mimes' => 'يجب أن بصيغة png او jpg',
     ];
 
 
@@ -54,5 +53,21 @@ class Slider extends Component
             'image' => $imageName,
             'body' => $this->body,
         ]);
+
+        $this->resetVars();
+        session()->flash('message', 'تم الاضافة بنجاح');
+
+    }
+
+    public function resetVars()
+    {
+
+        $this->title='';
+        $this->body='';
+        $this->image='';
+    }
+
+    public function deleteSlider($sliderId){
+        \App\Models\slider::find($sliderId)->delete();
     }
 }

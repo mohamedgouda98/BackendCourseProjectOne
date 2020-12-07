@@ -128,9 +128,10 @@
                                     <!-- Start Edit Website -->
                                     <div class="edit-website">
 
+                                    <div class="slider-section">
 
-                                     <livewire:slider/>
-
+                                        <livewire:slider/>
+                                    </div>
 
                                         <!-- Start Edit About Section
                                         ------------------------------>

@@ -9,11 +9,13 @@
                 من نحن
             </div>
             <div class="card-body">
-                <!-- Start Form
-                ----------------->
-                <form  method="post" action="{{route('about')}}" enctype="multipart/form-data">
-                    @method('PUT')
-                    @csrf
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
+                <!-- Start Form -->
+                <form wire:submit.prevent="updateAbout">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <div class="form-group">
@@ -21,6 +23,7 @@
                                 <!-- About Title Input
                                 -------------------------->
                                 <input type="text" name="title" wire:model="title" class="form-control" id="formGroupExampleInput">
+                                @error('title') <span class="error">{{ $message }}</span> @enderror
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -31,7 +34,7 @@
                                 -------------------------->
                                 <div class="custom-file">
                                     <input type="file" name="image" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label" for="customFile">تحميل صورة</label>
+                                    <label class="custom-file-label" wire:model="image" for="customFile">تحميل صورة</label>
                                 </div>
                             </div>
                         </div>
@@ -41,12 +44,13 @@
 
                         <!-- About Brief
                         -------------------------->
-                        <textarea class="form-control" name="body" id="formGroupExampleInput2" cols="30" rows="5">{{$about->body}}</textarea>
+                        <textarea class="form-control" wire:model="body" id="formGroupExampleInput2" cols="30" rows="5"></textarea>
+                        @error('body') <span class="error">{{ $message }}</span> @enderror
                     </div>
 
                     <!-- button Submit Form
                     -------------------------->
-                    <input type="submit" class="btn btn-primary" value="تعديل">
+                    <button class="btn btn-primary" >تعديل</button>
                 </form>
                 <!-- End Form
                 --------------->

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SliderController;
+use App\Http\Livewire\About;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,4 +31,7 @@ Route::group(['prefix' => 'admin'], function(){
     Route::put('/admin/about/add', [AboutController::class, 'updateAbout'])->name('about');
 
 });
+
+//Route::livewire('/about', [About::class, 'updateAbout']);
+
 

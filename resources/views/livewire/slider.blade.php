@@ -2,16 +2,18 @@
 
 
     <!-- Start Edit Slider Section-->
-    <div class="slider-section">
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-chart-area ml-1"></i>
                 السلايدر
             </div>
             <div class="card-body">
-                <!-- Start Form
-                ----------------->
-
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
+                <!-- Start Form -->
                 <form wire:submit.prevent="saveSlider">
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -76,7 +78,7 @@
 
                                     <!-- Item Services Button Control -->
                                     <a href="#!" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModalCentered">تعديل</a>
-                                    <a href="#!" class="card-link btn btn-danger">حذف</a>
+                                 <button wire:click="deleteSlider({{$slider->id}})" class="card-link btn btn-danger">حذف</button>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +90,6 @@
 
             </div>
         </div>
-    </div>
 
 
     <!-- End Edit Slider Section -->
