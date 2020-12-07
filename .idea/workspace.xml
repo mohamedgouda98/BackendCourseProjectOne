@@ -24,7 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d5f2c4f-5f3c-412d-96f8-c5c1e0675b01" name="Default Changelist" comment="Slider Controller">
+    <list default="true" id="1d5f2c4f-5f3c-412d-96f8-c5c1e0675b01" name="Default Changelist" comment="Lec 9">
       <change beforePath="$PROJECT_DIR$/../../Eljazera_Shining-V2.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MentorReg.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bakhargy/.editorconfig" beforeDir="false" />
@@ -124,10 +124,12 @@
       <change beforePath="$PROJECT_DIR$/../../ieee-sha-project/resources/views/welcome.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ieee-sha-project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../ieee-sha-project/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/firstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/firstProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../panda" beforeDir="false" afterPath="$PROJECT_DIR$/../../panda" afterDir="false" />
@@ -257,6 +259,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kyRMy3ce2dQfa7lBvUnBdy1vaP" />
@@ -290,7 +293,10 @@
       <workItem from="1606929418486" duration="655000" />
       <workItem from="1607177734105" duration="8391000" />
       <workItem from="1607190861102" duration="9000" />
-      <workItem from="1607190987818" duration="284000" />
+      <workItem from="1607190987818" duration="855000" />
+      <workItem from="1607270664442" duration="2932000" />
+      <workItem from="1607341253962" duration="472000" />
+      <workItem from="1607357494960" duration="3641000" />
     </task>
     <task id="LOCAL-00001" summary="Slider Controller">
       <created>1607184326601</created>
@@ -319,13 +325,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Slider Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slider Controller" />
+    <MESSAGE value="Lec 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lec 9" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607184341240">
+    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607285239805">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607184341240" />
+    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1607285239805" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1607239554466">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607239554466" />
     <state x="367" y="141" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1607190816238">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

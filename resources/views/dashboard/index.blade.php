@@ -10,6 +10,9 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+
+        @livewireStyles
+
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -126,112 +129,14 @@
                                     <div class="edit-website">
 
 
-                                        <!-- Start Edit Slider Section
-                                        ------------------------------>
-                                        <div class="slider-section">
-                                            <div class="card mb-4">
-                                                <div class="card-header">
-                                                    <i class="fas fa-chart-area ml-1"></i>
-                                                    السلايدر
-                                                </div>
-                                                <div class="card-body">
-                                                    <!-- Start Form
-                                                    ----------------->
+                                     <livewire:slider/>
 
-                                                    <form method="POST" action="{{route('slider.add')}}" enctype="multipart/form-data">
-                                                        @csrf
-                                                        <div class="row">
-                                                            <div class="col-12 col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="formGroupExampleInput">عنوان السلايدر</label>
-                                                                    <!-- Slider Title Input
-                                                                    -------------------------->
-                                                                    <input type="text" name="title" class="form-control" id="formGroupExampleInput">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6">
-                                                                <div class="form-group">
-                                                                    <label>اضافة صورة</label>
-
-                                                                    <!-- Upload Slider Image Input
-                                                                    -------------------------->
-                                                                    <div class="custom-file">
-                                                                        <input type="file" name="image" class="custom-file-input" id="customFile">
-                                                                        <label class="custom-file-label" for="customFile">تحميل صورة</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="formGroupExampleInput2">العنوان الفرعي</label>
-
-                                                            <!-- Slider Subtitle
-                                                            -------------------------->
-                                                            <textarea class="form-control" name="body" id="formGroupExampleInput2" cols="10" rows="5"></textarea>
-                                                        </div>
-
-                                                        <!-- button Submit Form
-                                                        -------------------------->
-                                                        <input type="submit" class="btn btn-primary" value="اضافة">
-                                                    </form>
-                                                    <!-- End Form
-                                                    --------------->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Edit Slider Section
-                                        ----------------------------->
 
                                         <!-- Start Edit About Section
                                         ------------------------------>
                                         <div class="about-section">
-                                            <div class="card mb-4">
-                                                <div class="card-header">
-                                                    <i class="fas fa-chart-area ml-1"></i>
-                                                    من نحن
-                                                </div>
-                                                <div class="card-body">
-                                                    <!-- Start Form
-                                                    ----------------->
-                                                    <form>
-                                                        <div class="row">
-                                                            <div class="col-12 col-md-6">
-                                                                <div class="form-group">
-                                                                    <label for="formGroupExampleInput">عنوان القسم</label>
-                                                                    <!-- About Title Input
-                                                                    -------------------------->
-                                                                    <input type="text" class="form-control" id="formGroupExampleInput">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 col-md-6">
-                                                                <div class="form-group">
-                                                                    <label>اضافة صورة</label>
+                                            <livewire:about />
 
-                                                                    <!-- Upload About Image Input
-                                                                    -------------------------->
-                                                                    <div class="custom-file">
-                                                                        <input type="file" class="custom-file-input" id="customFile">
-                                                                        <label class="custom-file-label" for="customFile">تحميل صورة</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="formGroupExampleInput2">اضافة محتوى للقسم</label>
-
-                                                            <!-- About Brief
-                                                            -------------------------->
-                                                            <textarea class="form-control" id="formGroupExampleInput2" cols="30" rows="5"></textarea>
-                                                        </div>
-
-                                                        <!-- button Submit Form
-                                                        -------------------------->
-                                                        <input type="submit" class="btn btn-primary" value="اضافة">
-                                                    </form>
-                                                    <!-- End Form
-                                                    --------------->
-                                                </div>
-                                            </div>
                                         </div>
                                         <!-- End Edit About Section
                                         ----------------------------->
@@ -826,5 +731,8 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
+
+        @livewireScripts
+
     </body>
 </html>
